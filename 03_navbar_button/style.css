@@ -1,23 +1,24 @@
-#navbar {
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
   display: flex;
-  align-items: flex-start;
-  gap: 16px;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
-.buttonbar {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  position: relative;
+.navbar button {
+  padding: 10px;
+  cursor: pointer;
 }
 
-.buttonbar button {
-  position: relative;
-  padding: 6px 12px;
+.navbar button.active {
+  background-color: #007bff;
+  color: white;
 }
 
-
-.buttonbar button.active {
-  background: #007bff;
-  color: #fff;
+.container {
+  border: 1px solid #ccc;
+  padding: 20px;
 }
